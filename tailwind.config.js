@@ -10,6 +10,7 @@
 module.exports = {
   content: [
     "./index.html",
+    "./ach.html",
     "./biodata.html",
     "./project.html"
   ],
