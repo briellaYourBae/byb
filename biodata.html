@@ -61,10 +61,12 @@
                             <td class="py-3 font-semibold text-white">Name</td>
                             <td class="text-white">Muhammad Faqih</td>
                         </tr>
+                        <!-- umur -->
                         <tr class="border-b border-gray-700">
                             <td class="py-3 font-semibold text-white">Age</td>
-                            <td class="text-white">23 Years Old</td>
-                        </tr>
+                            <td class="text-white" id="age"></td>
+                        </tr>                        
+                        <!-- end umur -->
                         <tr class="border-b border-gray-700">
                             <td class="py-3 font-semibold text-white">Location</td>
                             <td class="text-white">Indonesia</td>
@@ -117,8 +119,8 @@
 
 
 <script>
- // Toggle menu on mobile with animation
- document.getElementById('menu-toggle').addEventListener('click', function () {
+    // Toggle menu on mobile with animation
+    document.getElementById('menu-toggle').addEventListener('click', function () {
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenu.classList.contains('-translate-x-full')) {
             mobileMenu.classList.remove('-translate-x-full');
@@ -136,10 +138,16 @@
         mobileMenu.classList.add('-translate-x-full');
     });
 
-        // JavaScript to dynamically set the current year
-        const currentYear = new Date().getFullYear();
-        const footerText = document.getElementById('footer-text');
-        footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
-    </script>
+    // JavaScript to dynamically set the current year
+    const currentYear = new Date().getFullYear();
+    const footerText = document.getElementById('footer-text');
+    footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
+
+    // Calculate and display age dynamically
+    const birthYear = 2005; // Replace with actual birth year
+    const age = currentYear - birthYear;
+    document.getElementById('age').textContent = `${age} Years Old`;
+</script>
+
 </body>
 </html>
