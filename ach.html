@@ -208,8 +208,6 @@ var Application = ( function () {
     }());
 
     Application.init();
-    
-    // Toggle menu on mobile with animation
     document.getElementById('menu-toggle').addEventListener('click', function () {
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.toggle('transform');
@@ -217,14 +215,12 @@ var Application = ( function () {
         mobileMenu.classList.toggle('translate-x-0');
     });
 
-    // Close menu when close button is clicked
     document.getElementById('close-menu').addEventListener('click', function () {
         const mobileMenu = document.getElementById('mobile-menu');
         mobileMenu.classList.add('transform', '-translate-x-full');
         mobileMenu.classList.remove('translate-x-0');
     });
 
-    // JavaScript to dynamically set the current year
     const currentYear = new Date().getFullYear();
     const footerText = document.getElementById('footer-text');
     footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;

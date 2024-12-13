@@ -10,27 +10,19 @@
 </head>
 
 <body class="bg-[#1F252E] font-['Poppins'] max-h-screen pt-8">
-    <!-- Fixed Navbar with Blur Effect -->
     <header class="px-4 py-4 bg-[#1F252E]/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-between items-center z-50 rounded-b-3xl shadow-lg">
-        <!-- Logo -->
         <div class="logo text-xl font-extrabold">
             <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">BrieLLa.YB</a>
         </div>
-    
-        <!-- Hamburger Menu Button for Mobile -->
         <button id="menu-toggle" class="lg:hidden text-purple-600 text-2xl">
             <i class="bi bi-list"></i>
         </button>
-    
-        <!-- Navigation Links -->
         <nav id="navbar" class="hidden lg:flex lg:items-center lg:space-x-8">
             <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Home</a>
             <a href="biodata.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Briella?</a>
             <a href="project.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Project</a>
         </nav>
     </header>
-
-    <!-- Mobile Menu (Initially Hidden) -->
     <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-50 transform -translate-x-full transition-transform duration-500 ease-in-out">
         <div class="flex justify-end p-4">
             <button id="close-menu" class="text-white text-2xl">
@@ -43,7 +35,6 @@
             <a href="project.html" class="text-white hover:text-purple-600 font-semibold">Project</a>
         </div>
     </div>
-
     <section class="px-16 py-8">
         <div class="flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
             <div class="text-white space-y-4 max-w-md">
@@ -52,14 +43,12 @@
                     Selamat <span class="text-purple-600">Datang!</span>
                 </h1>
             </div>
-
             <div class="w-[528px] max-w-full shadow-[0px_16px_4px_-10px] shadow-purple-600">
                 <img src="./public/img/logo.png" alt="BrieLLa Logo" class="w-full">
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md">
         <div class="container mx-auto text-center">
             <p class="text-xs" id="footer-text"></p>
@@ -67,27 +56,24 @@
     </footer>
 
     <script>
-        // Toggle menu on mobile with slide-in animation
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.remove('hidden');
             setTimeout(() => {
                 mobileMenu.classList.remove('-translate-x-full');
-                mobileMenu.classList.add('translate-x-0');  // Slide in
+                mobileMenu.classList.add('translate-x-0'); 
             }, 10);
         });
 
-        // Close menu when close button is clicked
         document.getElementById('close-menu').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.remove('translate-x-0');
-            mobileMenu.classList.add('-translate-x-full'); // Slide out
+            mobileMenu.classList.add('-translate-x-full'); 
             setTimeout(() => {
                 mobileMenu.classList.add('hidden');
-            }, 500);  // Delay hiding until animation finishes
+            }, 500); 
         });
 
-        // JavaScript to dynamically set the current year
         const currentYear = new Date().getFullYear();
         const footerText = document.getElementById('footer-text');
         footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
