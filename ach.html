@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pencapaian - BrieLLa.YB</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Achievement - Briella.YB</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="icon" href="./public/img/logo.png" type="image">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <link rel="icon" href="./public/img/logo.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
-<body class="bg-[#1F252E] font-['Poppins'] max-h-screen pt-8">
+<body class="bg-[#1F252E] font-['Poppins'] max-h-screen pt-8 lg:pt-20">
     <header class="px-4 py-4 bg-[#1F252E]/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-between items-center z-50 rounded-b-3xl shadow-lg">
         <div class="logo text-xl font-extrabold">
             <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">BrieLLa.YB</a>
@@ -26,7 +26,8 @@
         </nav>
     </header>
 
-    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-50 transform -translate-x-full transition-transform duration-500 ease-out">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-40 transform -translate-x-full transition-transform duration-300">
         <div class="flex justify-end p-4">
             <button id="close-menu" class="text-white text-2xl">
                 <i class="bi bi-x"></i>
@@ -40,71 +41,112 @@
         </div>
     </div>
 
-    <main class="container mx-auto px-4 py-12 pb-40">
-        <section class="bg-gray-800 rounded-lg p-8 shadow-lg">
-            <h1 class="text-3xl font-bold mb-6 text-center text-purple-500">Pencapaian</h1>
-            <div class="grid md:grid-cols-3 gap-6">
+    <main class="container mx-auto px-4 py-8 pb-20">
+        <section 
+            class="bg-gray-800 rounded-lg p-8 shadow-lg animate__animated animate__fadeIn"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+        >
+            <h1 class="text-3xl font-bold mb-6 text-center text-purple-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">My Achievements</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+
                 <!-- Pencapaian 1 -->
                 <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all">
-                    <img src="./public/img/html.jpg" alt="Achievement 1" class="rounded-md mb-4">
-                    <img src="./public/img/cplus.jpg" alt="Achievement 2" class="rounded-md mb-4">
-                    <img src="./public/img/css.jpg" alt="Achievement 3" class="rounded-md mb-4">
-                    <img src="./public/img/js.jpg" alt="Achievement 4" class="rounded-md mb-4">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <img src="./public/img/html.jpg" alt="Achievement 1" class="rounded-md cursor-pointer" data-full="./public/img/html.jpg" />
+                        <img src="./public/img/cplus.jpg" alt="Achievement 2" class="rounded-md cursor-pointer" data-full="./public/img/cplus.jpg" />
+                        <img src="./public/img/css.jpg" alt="Achievement 3" class="rounded-md cursor-pointer" data-full="./public/img/css.jpg" />
+                        <img src="./public/img/js.jpg" alt="Achievement 4" class="rounded-md cursor-pointer" data-full="./public/img/js.jpg" />
+                    </div>
                     <h3 class="text-xl font-semibold mb-2 text-purple-400">complete all tasks in "SOLOLEARN"</h3>
-                    <p class="text-gray-300">complete tasks to get a basic certificate. starting from HTML, CSS, JAVA, & C++</p>
+                    <p class="text-gray-300">complete tasks to get a basic certificate. starting from HTML, CSS, JAVA, &amp; C++</p>
                 </div>
+
                 <!-- Pencapaian 2 -->
-                <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all">
+                <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all" data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
                     <img src="./public/img/webdeasain.jpg" alt="Achievement 2" class="rounded-md mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-purple-400">WebDesign participants at "IITC X GRAB"</h3>
                     <p class="text-gray-300">was one of the many participants in the competition, but did not win. (I will be back and will take that #1)</p>
                 </div>
+
                 <!-- Pencapaian 3 -->
-                <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all">
+                <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
                     <img src="./public/img/qwords.jpg" alt="Achievement 3" class="rounded-md mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-purple-400">introducing IT Industry and Website "QWORDS"</h3>
                     <p class="text-gray-300">being one of several others on an industrial visit</p>
                 </div>
-                <!-- Pencapaian 4 -->
+
+                 <!-- Pencapaian 4 -->
                 <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all">
-                    <img src="./public/img/crocodic-basic.jpeg" alt="Achievement 4" class="rounded-md mb-4">
-                    <img src="./public/img/crocodic-middle.jpeg" alt="Achievement 4" class="rounded-md mb-4">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <img src="./public/img/crocodic-basic.jpeg" alt="Achievement 4 Basic" class="rounded-md cursor-pointer" data-full="./public/img/crocodic-basic.jpeg" />
+                        <img src="./public/img/crocodic-middle.jpeg" alt="Achievement 4 Middle" class="rounded-md cursor-pointer" data-full="./public/img/crocodic-middle.jpeg" />
+                    </div>
                     <h3 class="text-xl font-semibold mb-2 text-purple-400">passed basic and middle in the "CROCODIC" industrial class</h3>
                     <p class="text-gray-300">became one of several people and schools who took part in the WebFrontend learning program and passed the basic and middle levels at "CROCODIC"</p>
                 </div>
+
                 <!-- Pencapaian 5 -->
-                <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all">
+                <!-- <div class="bg-gray-700 rounded-lg p-6 hover:shadow-xl transition-all" data-aos="fade-up" data-aos-delay="700" data-aos-duration="800">
                     <img src="./public/img/LOGO NOTHING.png" alt="Achievement 5" class="rounded-md mb-4">
                     <h3 class="text-xl font-semibold mb-2 text-purple-400">#menyusul"</h3>
                     <p class="text-gray-300"></p>
-                </div>
+                </div> -->
+
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md">
+
+    <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md" data-aos="fade-down" data-aos-duration="800">
         <div class="container mx-auto text-center">
             <p class="text-xs" id="footer-text"></p>
         </div>
     </footer>
 
-<script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menu-toggle');
         const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.toggle('transform');
-        mobileMenu.classList.toggle('-translate-x-full');
-        mobileMenu.classList.toggle('translate-x-0');
-    });
+        const closeMenu = document.getElementById('close-menu');
 
-    document.getElementById('close-menu').addEventListener('click', function () {
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenu.classList.add('transform', '-translate-x-full');
-        mobileMenu.classList.remove('translate-x-0');
-    });
+        menuToggle.addEventListener('click', function () {
+            mobileMenu.classList.toggle('translate-x-0');
+            mobileMenu.classList.toggle('-translate-x-full');
+        });
 
-    const currentYear = new Date().getFullYear();
-    const footerText = document.getElementById('footer-text');
-    footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
-</script>
+        closeMenu.addEventListener('click', function () {
+            mobileMenu.classList.add('-translate-x-full');
+            mobileMenu.classList.remove('translate-x-0');
+        });
+
+        // copy
+        const currentYear = new Date().getFullYear();
+        document.getElementById('footer-text').innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
+
+        window.addEventListener('DOMContentLoaded', () => {
+            AOS.init({
+                once: true,
+                easing: 'ease-in-out',
+                duration: 900,
+            });
+        });
+
+  // Cari semua gambar yang punya atribut data-full
+  const clickableImages = document.querySelectorAll('img[data-full]');
+  clickableImages.forEach(img => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', () => {
+      const url = img.getAttribute('data-full');
+      if (url) {
+        window.open(url, '_blank');
+      }
+    });
+  });
+
+
+    </script>
 </body>
 </html>
