@@ -1,3 +1,6 @@
+<!-- Ini file gabungan HTML yang sudah diperbarui dan konsisten di semua halaman. Setiap file akan punya struktur serupa dan link konsisten -->
+
+<!-- Contoh untuk cnt.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +10,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" href="./public/img/logo.png" type="image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
 </head>
 <body class="bg-[#1F252E] font-['Poppins'] min-h-screen pt-8">
     <header class="px-4 py-4 bg-[#1F252E]/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-between items-center z-50 rounded-b-3xl shadow-lg">
@@ -41,7 +46,7 @@
     <main class="container mx-auto px-4 py-12 pb-40">
         <section class="bg-gray-800 rounded-lg p-8 shadow-lg max-w-2xl mx-auto">
             <h1 class="text-3xl font-bold mb-6 text-center text-purple-500">Contact Me</h1>
-            
+
             <div class="mb-8">
                 <h2 class="text-xl font-semibold text-purple-400 mb-4">Contact Information</h2>
                 <div class="bg-gray-700 rounded-lg p-4">
@@ -50,47 +55,50 @@
                         Email: <a href="mailto:brielladev@gmail.com" class="hover:text-purple-400 transition-colors">brielladev@gmail.com</a>
                     </p>
                     <div class="flex space-x-4 mt-4">
-                            <a href="https://github.com/briellaYourBae" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
-                                <i class="bi bi-github"></i>
-                            </a>
-                            <a href="https://www.youtube.com/@briellainhere" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
-                                <i class="bi bi-youtube"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/muhammad-faqih-163b6231a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
-                                <i class="bi bi-linkedin"></i>
-                            </a>
-                            <a href="https://www.tiktok.com/@.airplanmode?_t=8sBENhDQoSO&_r=1" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
-                                <i class="bi bi-tiktok"></i>
-                            </a>
-                        </div>
+                        <a href="https://github.com/briellaYourBae" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
+                            <i class="bi bi-github"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@briellainhere" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-faqih-163b6231a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@briellaa.yb" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
+                            <i class="bi bi-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/@briellaa.yb" class="text-purple-700 text-4xl transition-transform transform hover:scale-110">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <form action="https://formspree.io/f/xnnqkalp" method="POST" target="_blank" class="space-y-4">
+            <form id="contactForm" action="https://formspree.io/f/xnnqkalp" method="POST" target="_blank" class="space-y-4">
                 <h2 class="text-xl font-semibold text-purple-400 mb-4">Send Me a Message</h2>
-                
+
                 <div>
                     <label for="name" class="block text-gray-300 mb-2">Name</label>
                     <input type="text" id="name" name="name" required 
                         class="w-full bg-gray-700 text-white rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
                 </div>
-                
+
                 <div>
                     <label for="email" class="block text-gray-300 mb-2">Email</label>
                     <input type="email" id="email" name="email" required 
                         class="w-full bg-gray-700 text-white rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500">
                 </div>
-                
+
                 <div>
                     <label for="message" class="block text-gray-300 mb-2">Message</label>
                     <textarea id="message" name="message" rows="4" required 
                         class="w-full bg-gray-700 text-white rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-purple-500"></textarea>
                 </div>
-                
+
                 <div id="confirmationMessage" class="hidden text-green-500 text-center">
                     Your message has been sent. Thank you!
                 </div>
-                
+
                 <button type="submit" 
                     class="w-full bg-purple-600 text-white py-3 rounded-lg hover:bg-purple-700 transition-colors focus:outline-none focus:ring-2 focus:ring-purple-500">
                     Send Message
@@ -106,7 +114,6 @@
     </footer>
 
     <script>
-        // Mobile Menu Toggle
         document.getElementById('menu-toggle').addEventListener('click', function () {
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('transform');
@@ -120,23 +127,14 @@
             mobileMenu.classList.remove('translate-x-0');
         });
 
-        // Footer Year
         const currentYear = new Date().getFullYear();
-        const footerText = document.getElementById('footer-text');
-        footerText.innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
+        document.getElementById('footer-text').innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
 
-        // Contact Form Submission
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
-            // Here you would typically add code to send the form data to a backend
-            // For this example, we'll just show a confirmation message
             const confirmationMessage = document.getElementById('confirmationMessage');
             confirmationMessage.classList.remove('hidden');
-            
-            // Optional: Clear form after submission
             this.reset();
-            
-            // Hide confirmation after 3 seconds
             setTimeout(() => {
                 confirmationMessage.classList.add('hidden');
             }, 3000);
