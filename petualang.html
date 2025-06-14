@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Life Adventure - Briella</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="./public/img/logo.png" type="image/png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body class="bg-[#1F252E] font-['Poppins'] pt-8 lg:pt-20">
+
+  <!-- Navbar -->
+  <header class="px-4 py-4 bg-[#1F252E]/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-between items-center z-50 rounded-b-3xl shadow-lg">
+    <div class="logo text-xl font-extrabold">
+      <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">BrieLLa.YB</a>
+    </div>
+    <button id="menu-toggle" class="lg:hidden text-purple-600 text-2xl">
+      <i class="bi bi-list"></i>
+    </button>
+    <nav id="navbar" class="hidden lg:flex lg:items-center lg:space-x-8">
+      <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Home</a>
+      <a href="biodata.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Briella?</a>
+      <a href="project.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Project</a>
+      <a href="petualang.html" class="text-white text-purple-500 font-bold underline">Petualang</a>
+      <a href="cnt.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Contact Me</a>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-40 transform -translate-x-full transition-transform duration-300">
+    <div class="flex justify-end p-4">
+      <button id="close-menu" class="text-white text-2xl"><i class="bi bi-x"></i></button>
+    </div>
+    <div class="flex flex-col items-center space-y-4">
+      <a href="index.html" class="text-white hover:text-purple-600 font-semibold">Home</a>
+      <a href="biodata.html" class="text-white hover:text-purple-600 font-semibold">Briella?</a>
+      <a href="project.html" class="text-white hover:text-purple-600 font-semibold">Project</a>
+      <a href="petualang.html" class="text-purple-600 font-bold underline">Petualang</a>
+      <a href="cnt.html" class="text-white hover:text-purple-600 font-semibold">Contact Me</a>
+    </div>
+  </div>
+
+  <!-- Petualang Hidup -->
+  <main class="container mx-auto px-4 py-8 pb-9 mt-1">
+    <h1 class="text-3xl font-bold mb-6 text-center text-purple-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">Life Adventure</h1>
+  <section class="bg-gray-800 rounded-lg p-8 shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+    <div class="text-white text-base leading-relaxed space-y-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+        <h2 class="text-xl font-semibold text-purple-400 mb-2">Educational Experience</h2>
+      <div>
+        <ul class="list-disc list-inside space-y-1">
+          <li>SDN 4 Mersi </li>
+          <li>SMP Muhammadiyah Purwokerto </li>
+          <li>SMKN 1 PURWOKERTO (PPLG)</li>
+          <li>UNIVERSITAS AMIKOM PURWOKERTO (SI)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main class="container mx-auto px-4 py-8 pb-9 mt-1">
+  <section class="bg-gray-800 rounded-lg p-8 shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+    <div class="text-white text-base leading-relaxed space-y-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+      <div>
+        <h2 class="text-xl font-semibold text-purple-400 mb-2">Life Experience</h2>
+        <p>mam, bubu, nonton spongebob</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<main class="container mx-auto px-4 py-8 pb-9 mt-1">
+  <section class="bg-gray-800 rounded-lg p-8 shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
+    <div class="text-white text-base leading-relaxed space-y-4" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+      <div>
+        <h2 class="text-xl font-semibold text-purple-400 mb-2">Professional Experience</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>PKL Frontend Developer | Dinas Kependudukan dan Pencatatann Sipil</li>
+          <li>Freelance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md" data-aos="fade-down" data-aos-duration="800">
+    <div class="container mx-auto text-center">
+      <p class="text-xs" id="footer-text"></p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    // Mobile Menu
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const closeMenu = document.getElementById('close-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('translate-x-0');
+      mobileMenu.classList.toggle('-translate-x-full');
+    });
+    closeMenu.addEventListener('click', () => {
+      mobileMenu.classList.add('-translate-x-full');
+      mobileMenu.classList.remove('translate-x-0');
+    });
+
+    // Footer Tahun
+    const currentYear = new Date().getFullYear();
+    document.getElementById('footer-text').innerHTML = `&copy; ${currentYear} BrieLLa.YB. All Rights Reserved.`;
+
+    // AOS init
+    AOS.init({
+      once: true,
+      easing: 'ease-in-out',
+      duration: 800,
+    });
+  </script>
+</body>
+</html>
