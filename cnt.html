@@ -11,40 +11,47 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
 </head>
 
-<body class="bg-[#1F252E] font-['Poppins'] min-h-screen pt-8">
-  <!-- Navbar -->
-  <header class="px-4 py-4 bg-[#1F252E]/80 backdrop-blur-md fixed bottom-0 left-0 w-full flex justify-between items-center z-50 rounded-b-3xl shadow-lg">
-        <div class="logo text-xl font-extrabold">
-            <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">BrieLLa.YB</a>
+<body class="bg-[#1F252E] font-['Poppins'] max-h-screen pt-8">
+   <!-- Footer Copyright - Fixed on Top -->
+   <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md z-40">
+        <div class="container mx-auto text-center">
+            <p class="text-xs" id="footer-text"></p>
         </div>
-        <button id="menu-toggle" class="lg:hidden text-purple-600 text-2xl">
+    </footer>
+
+   <!-- Navbar Baru - Fixed on Bottom -->
+   <header class="px-8 py-4 bg-[#0a0f1a]/90 backdrop-blur-md fixed bottom-6 left-1/2 transform -translate-x-1/2 w-[95%] max-w-7xl flex justify-between items-center z-50 rounded-full border border-gray-700/50 shadow-2xl">
+        <div class="logo text-xl font-extrabold">
+            <a href="index.html" class="text-white hover:text-purple-400 font-semibold transition-colors">BrieLLa.YB</a>
+        </div>
+        <button id="menu-toggle" class="lg:hidden text-purple-400 text-2xl">
             <i class="bi bi-list"></i>
         </button>
         <nav id="navbar" class="hidden lg:flex lg:items-center lg:space-x-8">
-            <a href="index.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Home</a>
-            <a href="biodata.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Briella?</a>
-            <a href="project.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Project</a>
-            <a href="cnt.html" class="text-white hover:text-purple-600 font-semibold transition-colors">Contact Me</a>
+            <a href="index.html" class="text-white hover:text-purple-400 font-medium transition-colors">Home</a>
+            <a href="biodata.html" class="text-white hover:text-purple-400 font-medium transition-colors">Briella?</a>
+            <a href="project.html" class="text-white hover:text-purple-400 font-medium transition-colors">Project</a>
+            <a href="cnt.html" class="bg-green-500 hover:bg-green-400 text-white px-6 py-2 rounded-full font-medium transition-all">Contact</a>
         </nav>
     </header>
 
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-50 transform -translate-x-full transition-transform duration-500 ease-out">
-    <div class="flex justify-end p-4">
-      <button id="close-menu" class="text-white text-2xl">
-        <i class="bi bi-x"></i>
-      </button>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="lg:hidden fixed inset-0 bg-[#1F252E] z-50 transform -translate-x-full transition-transform duration-500 ease-in-out flex flex-col">
+        <div class="flex justify-end p-4">
+            <button id="close-menu" class="text-white text-2xl">
+                <i class="bi bi-x"></i>
+            </button>
+        </div>
+        <div class="flex flex-col items-center justify-center space-y-6 flex-1 pb-20">
+            <a href="index.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Home</a>
+            <a href="biodata.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Briella?</a>
+            <a href="project.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Project</a>
+            <a href="cnt.html" class="bg-green-500 hover:bg-green-400 text-white px-10 py-4 rounded-full font-semibold text-xl">Contact</a>
+        </div>
     </div>
-    <div class="flex flex-col items-center space-y-4">
-      <a href="index.html" class="text-white hover:text-purple-600 font-semibold">Home</a>
-      <a href="biodata.html" class="text-white hover:text-purple-600 font-semibold">Briella?</a>
-      <a href="project.html" class="text-white hover:text-purple-600 font-semibold">Project</a>
-      <a href="cnt.html" class="text-white hover:text-purple-600 font-semibold">Contact Me</a>
-    </div>
-  </div>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12 pb-40">
+  <main class="container mx-auto px-4 py-12">
     <section class="bg-gray-800 rounded-lg p-8 shadow-lg max-w-2xl mx-auto animate__animated animate__fadeIn" data-aos="fade-up">
       <h1 class="text-3xl font-bold mb-6 text-center text-purple-500">Contact Me</h1>
 
@@ -56,11 +63,11 @@
             Email: <a href="mailto:brielladev@gmail.com" class="hover:text-purple-400 transition-colors">brielladev@gmail.com</a>
           </p>
           <div class="flex space-x-4 mt-4">
-            <a href="https://github.com/briellaYourBae" class="text-purple-700 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="200"><i class="bi bi-github"></i></a>
-            <a href="https://www.youtube.com/@briellainhere" class="text-purple-700 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="300"><i class="bi bi-youtube"></i></a>
-            <a href="https://www.linkedin.com/in/muhammad-faqih-163b6231a" class="text-purple-700 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="400"><i class="bi bi-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@briellaa.yb" class="text-purple-700 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="500"><i class="bi bi-tiktok"></i></a>
-            <a href="https://www.instagram.com/voidbriella" class="text-purple-700 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="600"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/briellaYourBae" class="text-purple-400 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="200"><i class="bi bi-github"></i></a>
+            <a href="https://www.youtube.com/@briellainhere" class="text-purple-400 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="300"><i class="bi bi-youtube"></i></a>
+            <a href="https://www.linkedin.com/in/muhammad-faqih-163b6231a" class="text-purple-400 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="400"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.tiktok.com/@briellaa.yb" class="text-purple-400 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="500"><i class="bi bi-tiktok"></i></a>
+            <a href="https://www.instagram.com/voidbriella" class="text-purple-400 text-4xl hover:scale-110 transition-transform" data-aos="zoom-in" data-aos-delay="600"><i class="bi bi-instagram"></i></a>
           </div>
         </div>
       </div>
@@ -89,14 +96,6 @@
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md">
-    <div class="container mx-auto text-center">
-      <p class="text-xs" id="footer-text"></p>
-    </div>
-  </footer>
-
-  
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
