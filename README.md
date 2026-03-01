@@ -1,7 +1,3 @@
-# BrieLLa.YB Portfolio
-
-Personal portfolio website showcasing projects, achievements, and professional information.
-
 ## 📂 Project Structure
 
 ```
@@ -39,15 +35,3 @@ npx serve
 ```
 
 4. Access the website at `http://localhost:8000`
-
-## 🛠️ Tech Stack
-
-- HTML5
-- CSS3 (Tailwind CSS via CDN)
-- JavaScript (Vanilla)
-- AOS (Animate On Scroll)
-- Bootstrap Icons
-
-## 📝 License
-
-© 2025 BrieLLa.YB. All Rights Reserved.
