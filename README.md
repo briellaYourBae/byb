@@ -25,13 +25,12 @@ git clone https://github.com/briellaYourBae/byb.git
 cd byb
 ```
 
-3. Open `index.html` in your browser or use a local server:
-```bash
-# Using Python
-python -m http.server 8000
+3. Open `index.html` directly in your browser or use Live Server extension in VS Code
 
-# Using Node.js
-npx serve
-```
+## 🌐 Deploy to GitHub Pages
 
-4. Access the website at `http://localhost:8000`
+1. Push your code to GitHub
+2. Go to repository Settings → Pages
+3. Select branch `main` and folder `/ (root)`
+4. Click Save
+5. Your site will be live at `https://yourusername.github.io/byb`
