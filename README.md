@@ -25,7 +25,7 @@ git clone https://github.com/briellaYourBae/byb.git
 cd byb
 ```
 
-3. Open `index.html` directly in your browser or use Live Server extension in VS Code
+3. Open `index.html` directly in your browser or use **Live Server** extension in VS Code
 
 ## 🌐 Deploy to GitHub Pages
 
