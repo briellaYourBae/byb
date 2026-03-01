@@ -11,9 +11,26 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <style>
     html { scroll-behavior: smooth; }
+    .btn-shine {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-shine::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+      transition: left 0.5s;
+    }
+    .btn-shine:hover::before {
+      left: 100%;
+    }
   </style>
 </head>
-<body class="bg-[#1F252E] font-['Poppins'] max-h-screen pt-8">
+<body class="bg-[#1F252E] font-['Poppins'] min-h-screen pt-8 pb-32">
    <!-- Footer Copyright - Fixed on Top -->
    <footer class="bg-gray-800/70 text-white py-2 fixed top-0 left-0 w-full backdrop-blur-md z-40">
         <div class="container mx-auto text-center">
@@ -33,7 +50,7 @@
             <a href="../index.html" class="text-white hover:text-purple-400 font-medium transition-colors">Home</a>
             <a href="biodata.html" class="text-white hover:text-purple-400 font-medium transition-colors">Briella?</a>
             <a href="project.html" class="text-white hover:text-purple-400 font-medium transition-colors">Project</a>
-            <a href="cnt.html" class="bg-green-500 hover:bg-green-400 text-white px-6 py-2 rounded-full font-medium transition-all">Contact</a>
+            <a href="cnt.html" class="btn-shine bg-green-500 hover:bg-green-400 text-white px-6 py-2 rounded-full font-medium transition-all">Contact</a>
         </nav>
     </header>
 
@@ -48,11 +65,11 @@
             <a href="../index.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Home</a>
             <a href="biodata.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Briella?</a>
             <a href="project.html" class="text-white hover:text-purple-400 font-semibold text-2xl">Project</a>
-            <a href="cnt.html" class="bg-green-500 hover:bg-green-400 text-white px-10 py-4 rounded-full font-semibold text-xl">Contact</a>
+            <a href="cnt.html" class="btn-shine bg-green-500 hover:bg-green-400 text-white px-10 py-4 rounded-full font-semibold text-xl">Contact</a>
         </div>
     </div>
 
-  <main class="container mx-auto px-4 py-8 pb-32">
+  <main class="container mx-auto px-4 py-8">
     <section class="bg-gray-800 rounded-lg p-8 shadow-lg animate__animated animate__fadeIn" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
       <h1 class="text-3xl font-bold mb-6 text-center text-purple-500" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="600">About Briella</h1>
       <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -101,10 +118,10 @@
         <p id="typing-text" class="text-gray-300"></p>
       </div>
       <div class="mt-8 flex flex-col md:flex-row md:justify-center md:space-x-4 items-center space-y-4 md:space-y-0" data-aos="fade-up" data-aos-delay="900" data-aos-duration="800">
-        <a href="project.html" class="bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">View Projects</a>
-        <a href="ach.html" class="bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">Achievement</a>
-        <a href="https://flowcv.com/resume/2nh7221ifm97" class="bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">CV</a>
-        <a href="petualang.html" class="bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">Life Adventure</a>
+        <a href="project.html" class="btn-shine bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">View Projects</a>
+        <a href="ach.html" class="btn-shine bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">Achievement</a>
+        <a href="https://flowcv.com/resume/2nh7221ifm97" class="btn-shine bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">CV</a>
+        <a href="petualang.html" class="btn-shine bg-purple-600 text-white py-4 px-8 rounded-lg text-lg w-full md:w-auto hover:bg-purple-500 transition-colors text-center">Life Adventure</a>
       </div>
     </section>
   </main>
